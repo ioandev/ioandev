@@ -5,7 +5,7 @@
         <button
           :class="'buttonId' + buttonId + '_main2 block text-white text-sm shadow-lg text-sm py-3 px-4 font-sans tracking-wide uppercase font-bold'"
           @click="onClick">
-          {{text}}
+          {{displayText}}
         </button>
         <div :class="'buttonId' + buttonId + '_main3 shadow-lg p-3'">
           <div class="w-4 h-4 relative">
@@ -19,13 +19,27 @@
 <script>
   import CustomButton from '~/components/CustomButton'
   export default {
-    props: ["text", "icon", "buttonId"],
+    props: ["text", "icon", "buttonId", "afterClickText"],
     components: {
       CustomButton
+    },
+    data() {
+      return {
+        hasBeenClicked: false
+      }
+    },
+    computed: {
+      displayText() {
+        if (this.hasBeenClicked && this.afterClickText != undefined) {
+          return this.afterClickText;
+        }
+        return this.text
+      }
     },
     methods: {
       onClick() {
         this.$emit('click', this.click)
+        this.hasBeenClicked = true
       }
     }
   }

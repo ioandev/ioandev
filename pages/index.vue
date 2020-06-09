@@ -5,7 +5,8 @@
         Ioan
       </h1>
       <div class="links">
-        <CustomButton text="Ioan's CV" @click="cvClick" icon="attach_file" buttonId="1" />
+        <CustomButton text="Ioan's CV" afterClickText="Ioan's CV - Downloaded" @click="cvClick" icon="attach_file"
+          buttonId="1" />
         <CustomButton text="Ioan's LinkedIn" @click="linkedinClick" icon="linkedin" buttonId="2" />
         <CustomButton text="Ioan's blog" @click="blogClick" icon="crop_free" buttonId="3" />
       </div>
