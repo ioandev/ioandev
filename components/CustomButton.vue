@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="button-outer">
     <div class="inline-block">
       <div :class="'buttonId' + buttonId + '_main flex rounded border-b-2 overflow-hidden m-2'">
         <button

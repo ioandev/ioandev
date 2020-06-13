@@ -10,16 +10,18 @@
         </h2>
         <nuxt />
         <div class="links">
-          <CustomButton text="Ioan's CV" afterClickText="Ioan's CV - Downloaded" @click="cvClick" icon="attach_file"
+          <CustomButton text="Resume" afterClickText="Resume - Downloaded" @click="cvClick" icon="attach_file"
             buttonId="1" />
-          <CustomButton text="Ioan's LinkedIn" @click="linkedinClick" icon="linkedin" buttonId="2" />
-          <CustomButton text="Ioan's blog" @click="blogClick" icon="crop_free" buttonId="3" />
+          <CustomButton text="LinkedIn" @click="linkedinClick" icon="linkedin" buttonId="2" />
+          <CustomButton text="Blog" @click="blogClick" icon="crop_free" buttonId="3" />
         </div>
       </div>
     </div>
 
     <footer>
-      <cookie-law theme="dark-lime"></cookie-law>
+      <client-only>
+        <cookie-law theme="dark-lime"></cookie-law>
+      </client-only>
     </footer>
   </div>
 </template>
@@ -27,6 +29,9 @@
 <script>
   import CustomButton from '~/components/CustomButton'
   import axios from 'axios'
+  import {
+    gsap
+  } from "gsap/dist/gsap";
   export default {
     components: {
       CustomButton
@@ -55,6 +60,26 @@
       async blogClick() {
         const blogUrl = "https://ioan.blog/"
         window.open(blogUrl, '_blank');
+      },
+    },
+    mounted() {
+      if (process.browser) {
+        var tl = gsap.timeline({
+          defaults: {
+            duration: 0.4
+          }
+        });
+        tl.from(".title", {
+          x: -50,
+          stagger: .6,
+          opacity: 1,
+          duration: 1
+        })
+        tl.from(".button-outer", {
+          y: -50,
+          stagger: .4,
+          opacity: 0
+        }, "-=1")
       }
     }
   }

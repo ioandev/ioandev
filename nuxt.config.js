@@ -77,6 +77,9 @@ module.exports = {
   },
 */
   build: {
+    transpile: [
+      "gsap"
+    ],
     /*
     ** You can extend webpack config here
     */
