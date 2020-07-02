@@ -1,10 +1,9 @@
 <template>
-  <div class="button-outer">
+  <div class="button-outer" @click="onClick">
     <div class="inline-block">
       <div :class="'buttonId' + buttonId + '_main flex rounded border-b-2 overflow-hidden m-2'">
         <button
-          :class="'buttonId' + buttonId + '_main2 block text-white text-sm shadow-lg text-sm py-3 px-4 font-sans tracking-wide uppercase font-bold'"
-          @click="onClick">
+          :class="'buttonId' + buttonId + '_main2 block text-white text-sm shadow-lg text-sm py-3 px-4 font-sans tracking-wide uppercase font-bold'">
           {{displayText}}
         </button>
         <div :class="'buttonId' + buttonId + '_main3 shadow-lg p-3'">
@@ -121,6 +120,27 @@
 
   .buttonId3_main3 {
     @apply bg-orange-400;
+  }
+
+
+  .buttonId4_main {
+    @apply border-gray-700;
+  }
+
+  .buttonId4_main2 {
+    @apply bg-indigo-700;
+
+    &:hover {
+      @apply bg-indigo-500;
+    }
+  }
+
+  .buttonId4_main3 {
+    @apply bg-indigo-400;
+  }
+
+  .inline-block:hover {
+    cursor: pointer;
   }
 
 </style>
