@@ -14,7 +14,8 @@
             buttonId="1" />
           <CustomButton text="LinkedIn" @click="linkedinClick" icon="linkedin" buttonId="2" />
           <CustomButton text="Blog" @click="blogClick" icon="crop_free" buttonId="3" />
-          <CustomButton text="Github" @click="githubClick" icon="code" buttonId="4" />
+          <CustomButton text="Github" @click="githubClick" icon="code" buttonId="2" />
+          <CustomButton text="Stackoveflow" @click="stackoverflowClick" icon="thumb_up" buttonId="1" />
         </div>
       </div>
     </div>
@@ -65,6 +66,10 @@
       async githubClick() {
         const githubUrl = "https://github.com/ioandev"
         window.open(githubUrl, '_blank');
+      },
+      async stackoverflowClick() {
+        const stackoverflowLink = "https://stackoverflow.com/users/1204843/ioan"
+        window.open(stackoverflowLink, '_blank');
       },
     },
     mounted() {
