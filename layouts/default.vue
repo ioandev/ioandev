@@ -14,7 +14,7 @@
             buttonId="1" />
           <CustomButton text="LinkedIn" @click="linkedinClick" icon="linkedin" buttonId="2" />
           <CustomButton text="Blog" @click="blogClick" icon="crop_free" buttonId="3" />
-          <CustomButton text="Github" @click="githubClick" icon="crop_free" buttonId="4" />
+          <CustomButton text="Github" @click="githubClick" icon="code" buttonId="4" />
         </div>
       </div>
     </div>
@@ -63,7 +63,7 @@
         window.open(blogUrl, '_blank');
       },
       async githubClick() {
-        const githubUrl = "https://github.com/ioanb7"
+        const githubUrl = "https://github.com/ioandev"
         window.open(githubUrl, '_blank');
       },
     },
