@@ -24,6 +24,8 @@
     "vue-cookie-law": "^1.13.3"
   },
   "devDependencies": {
+    "@nuxt/types": "^2.14.4",
+    "@nuxt/typescript-build": "^2.0.3",
     "@nuxtjs/google-analytics": "^2.3.0",
     "@nuxtjs/tailwindcss": "^1.0.0",
     "@vue/test-utils": "^1.0.0-beta.27",

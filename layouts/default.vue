@@ -1,26 +1,8 @@
 <template>
   <div>
-    <div class="container">
-      <div>
-        <h1 class="title">
-          Ioan
-        </h1>
-        <h2 class="subtitle">
-          Contractor
-        </h2>
-        <nuxt />
-        <div class="links">
-          <CustomButton text="Resume" afterClickText="Resume - Downloaded" @click="cvClick" icon="attach_file"
-            buttonId="1" />
-          <CustomButton text="LinkedIn" @click="linkedinClick" icon="linkedin" buttonId="2" />
-          <CustomButton text="Blog" @click="blogClick" icon="crop_free" buttonId="3" />
-          <CustomButton text="Github" @click="githubClick" icon="code" buttonId="2" />
-          <CustomButton text="Stackoveflow" @click="stackoverflowClick" icon="thumb_up" buttonId="1" />
-        </div>
-      </div>
-    </div>
-
+    <nuxt/>
     <footer>
+      <p>Made by NextView</p>
       <client-only>
         <cookie-law theme="dark-lime"></cookie-law>
       </client-only>
@@ -28,78 +10,11 @@
   </div>
 </template>
 
-<script>
-  import CustomButton from '~/components/CustomButton'
-  import axios from 'axios'
-  import {
-    gsap
-  } from "gsap/dist/gsap";
-  export default {
-    components: {
-      CustomButton
-    },
-    methods: {
-      async cvClick() {
-        let url = "/cv.pdf"
-        let label = "IoanBiticu-Contractor.pdf"
-
-        var response = await axios.get(url, {
-          responseType: 'blob'
-        })
-        const blob = new Blob([response.data], {
-          type: 'application/pdf'
-        })
-        const link = document.createElement('a')
-        link.href = URL.createObjectURL(blob)
-        link.download = label
-        link.click()
-        URL.revokeObjectURL(link.href)
-      },
-      async linkedinClick() {
-        const linkedInUrl = "https://www.linkedin.com/in/ioanbiticu/"
-        window.open(linkedInUrl, '_blank');
-      },
-      async blogClick() {
-        const blogUrl = "https://ioan.blog/"
-        window.open(blogUrl, '_blank');
-      },
-      async githubClick() {
-        const githubUrl = "https://github.com/ioandev"
-        window.open(githubUrl, '_blank');
-      },
-      async stackoverflowClick() {
-        const stackoverflowLink = "https://stackoverflow.com/users/1204843/ioan"
-        window.open(stackoverflowLink, '_blank');
-      },
-    },
-    mounted() {
-      if (process.browser) {
-        var tl = gsap.timeline({
-          defaults: {
-            duration: 0.4
-          }
-        });
-        tl.from(".title", {
-          x: -50,
-          stagger: .6,
-          opacity: 1,
-          duration: 1
-        })
-        tl.from(".button-outer", {
-          y: -50,
-          stagger: .4,
-          opacity: 0
-        }, "-=1")
-      }
-    }
-  }
-
-</script>
 
 
 <style>
-  html {
-    font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+  * {
+    font-family: 'Montserrat', 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
       Roboto, 'Helvetica Neue', Arial, sans-serif;
     font-size: 16px;
     word-spacing: 1px;
@@ -110,35 +25,19 @@
     box-sizing: border-box;
   }
 
-  .container {
-    margin: 0 auto;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+  .h-ta-screen {
+    min-height:60vh;
   }
 
-  .title {
-    font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-      'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-    display: block;
-    font-weight: 300;
-    font-size: 100px;
-    color: #35495e;
-    letter-spacing: 1px;
+  .who_is_ioan {
+    box-shadow: 40px 40px #ffff00;
   }
 
-  .subtitle {
-    font-weight: 300;
-    font-size: 24px;
-    color: #526488;
-    word-spacing: 5px;
-    padding-bottom: 15px;
+  .cool_shadow {
+    box-shadow: 0 -5px 5px -5px #333, 0 5px 5px -5px #333;
   }
-
-  .links {
-    padding-top: 15px;
+  .cool_shadow2 {
+    /*box-shadow: 0px -11px 32px 3px rgba(255,255,255,0.8), 10px 10px 8px 3px black, -10px 10px 8px 3px black;*/
+    box-shadow: 0px 0px 1px 1px rgba(255,255,255,0.5);
   }
-
 </style>
