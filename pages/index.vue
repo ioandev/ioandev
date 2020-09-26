@@ -8,7 +8,7 @@
   export default {
     //middleware: 'promo'
     middleware({ redirect }) {
-      return redirect('/how-to-become-a-web-master')
+      return redirect('/how-to-master-the-web')
     }
   }
 </script>

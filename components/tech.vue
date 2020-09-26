@@ -10,19 +10,19 @@
       <div class="w-1/4 block">
         <div class="md:w-1/3 mx-auto flex">
           <img class="h-8 w-auto" src="../assets/img/logos/vue.png" alt="Workflow logo">
-          <span class="leading-8 pl-2">Vue.js</span>
+          <span class="leading-8 pl-2">C#</span>
         </div>
       </div>
       <div class="w-1/4 block">
         <div class="md:w-1/3 mx-auto flex">
           <img class="h-8 w-auto" src="../assets/img/logos/vue.png" alt="Workflow logo">
-          <span class="leading-8 pl-2">Vue.js</span>
+          <span class="leading-8 pl-2">PWA</span>
         </div>
       </div>
       <div class="w-1/4 block">
         <div class="md:w-1/3 mx-auto flex">
           <img class="h-8 w-auto" src="../assets/img/logos/vue.png" alt="Workflow logo">
-          <span class="leading-8 pl-2">Vue.js</span>
+          <span class="leading-8 pl-2">Smth</span>
         </div>
       </div>
     </div>

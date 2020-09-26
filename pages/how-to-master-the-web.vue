@@ -1,8 +1,11 @@
 <template>
   <div style="min-height:3000px;"> <!-- debug -->
     <top-nav/>
-    <above-the-fold/>
-    <tech/>
+    <div class="border-b-4 border-black">
+      <above-the-fold/>
+    </div>
+    <!--
+    <tech/>-->
     <who-is/>
     <steps/>
     <div class=" bg-gray-200">

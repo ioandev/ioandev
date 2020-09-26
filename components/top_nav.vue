@@ -1,5 +1,5 @@
 <template>
-  <nav class="bg-gray-800">
+  <nav class="border-b-4 border-gray-800" style="background-color: #00224c">
     <div class="container max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
       <div class="relative flex items-center justify-between h-12">
         <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
@@ -21,8 +21,8 @@
         </div>
         <div class="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
           <div class="flex-shrink-0">
-            <img class="block lg:hidden h-8 w-auto" src="../assets/img/logo2.png" alt="Workflow logo">
-            <img class="hidden lg:block h-8 w-auto" src="../assets/img/logo2.png" alt="Workflow logo">
+            <img class="block lg:hidden h-8 w-auto" src="../assets/img/ioan-logo2.png" alt="Workflow logo">
+            <img class="hidden lg:block h-8 w-auto" src="../assets/img/ioan-logo2.png" alt="Workflow logo">
           </div>
 
         </div>
