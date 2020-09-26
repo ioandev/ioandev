@@ -1,8 +1,9 @@
 <template>
   <div>
+    <p class="text-4xl leading-10 pb-4">What are we going to do?</p>
     <ul>
       <li v-for="thing in things" :key="thing[1]" class="">
-        <div class="border-4 border-blue-800 text-white m-2" style="background-color: #00224c">
+        <div class="border-4 border-blue-800 text-white mb-2" style="background-color: #00224c">
           <div class="flex ">
             <div class="text-lg block h-full bg-white flex-grow">
               <div class="inline-block text-2xl bg-white" style="width:50px; overflow-x:hidden;">
