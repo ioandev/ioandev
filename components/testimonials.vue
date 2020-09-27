@@ -1,23 +1,25 @@
 <template>
-  <div class="my-20">
-    <h2 class="text-4xl text-center font-bold tracking-tighter">What others say about me...</h2>
-    <p class="px-20">Once you attain the passion for creating web sites, people are going to start noticing you and
-      you'll be in high demand. It's the combination of these three vital factors forming the ultimate "bliss zone" ...
-   </p>
+  <div class="border-t-8 border-b-8 border-black">
+    <div class="container mx-auto bg-white relative  py-20">
+      <h2 class="text-4xl text-center font-bold tracking-tighter">What others say about me…</h2>
+      <p class="px-20">Once you attain the passion for creating web sites, people are going to start noticing you and
+        you'll be in high demand. It's the combination of these three vital factors forming the ultimate "bliss zone" …
+    </p>
 
-    <div class="flex flex-col mx-10">
-      <testimonial
-        :company="testimonial.company"
-        :content="testimonial.content"
-        :author="testimonial.author"
-        :img="testimonial.img"
-        :title="testimonial.title"
-        classes="w-full md:w-3/5 mx-auto"
-      v-for="testimonial in testimonials" :key="testimonial.author"/>
-    </div>
+      <div class="flex flex-col mx-10">
+        <testimonial
+          :company="testimonial.company"
+          :content="testimonial.content"
+          :author="testimonial.author"
+          :img="testimonial.img"
+          :title="testimonial.title"
+          classes="w-full md:w-3/5 mx-auto"
+        v-for="testimonial in testimonials" :key="testimonial.author"/>
+      </div>
 
-    <div class="w-2/5 mx-auto">
-      <cta-a/>
+      <div class="w-2/5 mx-auto">
+        <cta-a/>
+      </div>
     </div>
   </div>
 </template>

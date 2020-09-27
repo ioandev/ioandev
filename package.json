@@ -5,7 +5,7 @@
   "author": "Ioan Biticu",
   "private": true,
   "scripts": {
-    "dev": "cross-env NODE_ENV=development NUXT_HOST=localhost NUXT_PORT=5020 nodemon server/index.js --watch server",
+    "dev": "cross-env NODE_ENV=development NUXT_HOST=0.0.0.0 NUXT_PORT=5020 nodemon server/index.js --watch server",
     "build": "nuxt build",
     "start": "cross-env NODE_ENV=production NUXT_HOST=127.0.0.1 NUXT_PORT=5020 node server/index.js",
     "generate": "nuxt generate",

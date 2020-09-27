@@ -1,5 +1,5 @@
 <template>
-  <div style="min-height:3000px;"> <!-- debug -->
+  <div>
     <top-nav/>
     <div class="border-b-4 border-black">
       <above-the-fold/>
@@ -14,11 +14,10 @@
       </div>
     </div>
     <div class=" bg-gray-400">
-      <div class="container mx-auto bg-white relative">
-        <testimonials />
-      </div>
+      <testimonials />
     </div>
-    <p>Get access to my private newsletter.</p>
+    <!--
+    <p>Get access to my private newsletter.</p>-->
   </div>
 </template>
 

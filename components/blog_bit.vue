@@ -1,9 +1,9 @@
 <template>
   <div>
-    <h2 class="text-4xl text-center font-bold tracking-tighter">Get access to my hidden blog posts...</h2>
+    <h2 class="text-4xl text-center font-bold tracking-tighter">Get access to my hidden blog posts…</h2>
     <p class="px-20">Following are some of the public posts on my blog, the private ones are written with this project in mind.</p>
 
-    <div class="block w-full lg:hidden md:hidden">
+    <div class="block w-full xl:hidden md:hidden">
       <div class="flex flex-col">
         <blog-article
           :title="post.title"
@@ -18,7 +18,7 @@
       </div>
     </div>
 
-    <div class="hidden lg:block md:hidden w-full">
+    <div class="hidden xl:block md:hidden w-full">
       <div class="flex p-20 py-10" v-for="(postsGroup, i) in postsGroupedSMLG" :key="i">
         <blog-article
           :title="post.title"
@@ -33,7 +33,7 @@
       </div>
     </div>
 
-    <div class="hidden lg:hidden md:block w-full py-10">
+    <div class="hidden xl:hidden md:block w-full py-10">
       <div class="flex p-10 py-3" v-for="(postsGroup, i) in postsGroupedMD" :key="i">
         <blog-article
           :title="post.title"

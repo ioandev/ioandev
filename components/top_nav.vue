@@ -1,6 +1,6 @@
 <template>
   <nav class="border-b-4 border-gray-800" style="background-color: #00224c">
-    <div class="container max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
+    <div class="container max-w-7xl mx-auto px-2 sm:px-6 xl:px-8">
       <div class="relative flex items-center justify-between h-12">
         <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
           <!-- Mobile menu button-->
@@ -21,8 +21,8 @@
         </div>
         <div class="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
           <div class="flex-shrink-0">
-            <img class="block lg:hidden h-8 w-auto" src="../assets/img/ioan-logo2.png" alt="Workflow logo">
-            <img class="hidden lg:block h-8 w-auto" src="../assets/img/ioan-logo2.png" alt="Workflow logo">
+            <img class="block xl:hidden h-8 w-auto" src="../assets/img/ioan-logo2.png" alt="Workflow logo">
+            <img class="hidden xl:block h-8 w-auto" src="../assets/img/ioan-logo2.png" alt="Workflow logo">
           </div>
 
         </div>
@@ -33,12 +33,12 @@
             <div class="hidden sm:block sm:ml-6">
               <div class="flex">
                 <a href="#"
-                  class="ml-4 px-3 py-2 rounded-md font-medium text-lg leading-5 text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700 transition duration-150 ease-in-out">My
+                  class="ml-4 px-3 py-2 font-medium text-lg leading-5 text-gray-300 hover:text-white hover:bg-blue-900 focus:outline-none focus:text-white focus:bg-gray-700 transition duration-150 ease-in-out">My
                   story</a>
                 <a href="#"
-                  class="ml-4 px-3 py-2 rounded-md font-medium text-lg leading-5 text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700 transition duration-150 ease-in-out">Reviews</a>
+                  class="ml-4 px-3 py-2 font-medium text-lg leading-5 text-gray-300 hover:text-white hover:bg-blue-900 focus:outline-none focus:text-white focus:bg-gray-700 transition duration-150 ease-in-out">Reviews</a>
                 <a href="#"
-                  class="ml-4 px-3 py-2 rounded-md font-medium text-lg leading-5 text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700 transition duration-150 ease-in-out">I
+                  class="ml-4 px-3 py-2 font-medium text-lg leading-5 text-gray-300 hover:text-white hover:bg-blue-900 focus:outline-none focus:text-white focus:bg-gray-700 transition duration-150 ease-in-out">I
                   want in</a>
               </div>
             </div>

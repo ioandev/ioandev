@@ -1,10 +1,10 @@
 <template>
   <div class=" bg-gray-200 border-b-8">
     <div class="container mx-auto py-20 bg-gray-100 relative">
-      <h2 class="text-4xl text-center font-bold tracking-tighter">The Key To Unlock Life's Sweetest Secret...</h2>
+      <h2 class="text-4xl text-center font-bold tracking-tighter">The Key To Unlock Life's Sweetest Secret…</h2>
       <p>Once you've attained this, you may never want to go back. It's the combination of these three vital factors
-        forming the ultimate "bliss zone" ...</p>
-      <div class="flex border-2 p-4 lg:p-20 lg:m-20">
+        forming the ultimate "bliss zone" …</p>
+      <div class="flex border-2 p-4 xl:p-20 xl:m-20">
         <div class="hidden md:w-2/5 md:block">
           <div class="mx-auto flex">
             <p>&nbsp;</p>

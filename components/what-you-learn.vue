@@ -6,8 +6,8 @@
         <div class="border-4 border-blue-800 text-white mb-2" style="background-color: #00224c">
           <div class="flex ">
             <div class="text-lg block h-full bg-white flex-grow">
-              <div class="inline-block text-2xl bg-white" style="width:50px; overflow-x:hidden;">
-              &nbsp;{{thing[0]}}&nbsp;
+              <div class="inline-block text-3xl bg-white" style="width:60px; overflow-x:hidden;">
+              &nbsp;{{thing[0]}}&nbsp;&nbsp;
               </div>
             </div>
 
@@ -31,7 +31,7 @@ export default {
       ],
       [
         "👟",
-        "Learn how to work from the city near by for a few days a week",
+        "Enjoy extended city breaks",
       ],
       [
         "👨‍🔬",

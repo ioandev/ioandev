@@ -14,34 +14,33 @@
           <div class="text-white">
             <h2 class="text-4xl text-center font-bold tracking-tighter text-white my-20 mt-20 md:mt-10">Who is Ioan Biticu?</h2>
             <p class="mb-2">
-              I was born in a small village in the Austrian alps. It wasn't the richest or the poorest background I grew
-              up in, just very simple. Becoming older, I felt like my life was heavily influenced by society's norms and
-              established rules. The imparative being "Get good grades, study hard, apply for a job, be a good employee,
-              live frugal and modest, marry and have kids, hold that job for 40 years, and then retire when you're 67 or
-              something."
+              I grew up with a lot of freedom as a kid. I was in front of a keyboard when I was 3 and later on I hated school, especially when the internet came around which was later for me. At one point I had my own PC in my bedroom and I was able to play some online popular games at the time - Counter strike 1.6 and Metin2. There weren't many people in my country who could afford better games than this. So I was entertained. Later on I was told I have to think of work and I instinctively knew it was going to be related to computers. So I picked up a booklet on HTML and Microsoft FrontPage and I did a website with pictures of my family and descriptions of each. And that was fun. From there with encourangement from my parents and teachers I kept coding stuff. And I was spending hours on end every day. Programming replaced my gaming time.
+</p>
+<p class="mb-2">
+
+              I grew up when the internet was transitioning from something the nerds are using, to a full blown out event in today's age where everything is about the online world, and less about the physical world.
+              In over a decade I've wathed what website made it to the top, which ones are popular, and why. And then I've started replicating the success of others. And I did this for hours on end every day, because it was fun.
+              If you're a creative soul you can probably relate when you come onto a website that serves you the way you want to be served it's an amazing feel isn't it? Well that's what I've done.
+
+              Everyone online is in a rush to get what they want done, fast.
+</p>
+<p class="mb-2">
+              I knew that once you reach a solid level in programming you can slow down and develop other areas of your life. I knew I had to do. So I've asked myself a couple of questions: How can I put myself in a different environment than I am now, and how can I give myself a lot of uncomfortable objectives so I become better?
+
+              For the past few years I've been experimenting with integrating all the areas I want to work on in my life: programming, sports, hobbies, parties and travelling. This bundle of activities just doesn't work right with a 9-5 Monday to Friday schedule. You get me? So I've quit. There is too much vitality to be lost on a 9-5 job.
+
+              It's a trap easy to escape once you put in your lifetime into perspective. And yes, it's hard. <strong>But
+                what's better? Waking up to what you could've done, or to what you're about to do?</strong>
+
             </p>
             <p class="mb-2">
-              It didn't take me long enough until I realized that this wasn't the life I wanted to live and decided to
-              take a different path: Dropping out of college, and moving to L.A. with about $16,000 in debt, I started
-              to work as an intern for an international relationship advice company. Within the next two years I managed
-              to become an instructor and got the opportunity to travel around the world as a coach. In the end, I
-              finished four world tours and held seminars to tens of thousands of people. But most importantly, I
-              learned how to look after myself without having to be reliant on someone else. So I created comfortable
-              wealth for myself – independently and by doing things that I ENJOYED.
+              The skills I'm going to show you are going to rid you of a lot of questions and anxiety about life. And I 100% believe you're going to see yourself in a better light years from now than what could otherwise be if you don't 100% focus on your life goals and to get everything that you want.
             </p>
-            <p class="mb-2">
-              And while all of this was happening, I noticed more and more how our current system affected not just the
-              old me living in its home town, but also other people all around the world and lead to frustration: People
-              are being educated and brought into this system just to become mindless robots, almost machine-like, in
-              deadend office jobs. Doing simple, repetitive, mundane work and wasting their best years in life. Seeing
-              that I could make it and become financially independent, my mission became to transform other hungry,
-              motivated "outside the box" people who KNOW they are destined for something bigger into self-succient and
-              fulfilled human beings. This is where the idea of FreedomBusinessMentoring started growing its roots. And
-              it changed hundreds of lives already.
-            </p>
+            <!--
             <div class="pt-10">
               <cta-a/>
             </div>
+            -->
           </div>
         </div>
       </div>
