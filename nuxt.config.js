@@ -26,6 +26,7 @@ module.exports = {
   */
   css: [
     '@/assets/css/tailwind.css',
+    '@/assets/css/style.css',
   ],
   /*
   ** Plugins to load before mounting the App
