@@ -59,10 +59,13 @@ module.exports = {
     '@nuxtjs/robots',
   ],
 
-  robots: {
-    UserAgent: '*',
-    Disallow: '/cv.pdf'
-  },
+  // https://dev.to/siliconmachine/how-to-implement-a-robots-txt-file-in-a-nuxt-project-nuxt-2-10-4a9m
+  robots: [
+    {
+      UserAgent: '*',
+      Disallow: '/apply'
+    }
+  ],
   /*
   ** Axios module configuration
   ** See https://axios.nuxtjs.org/options

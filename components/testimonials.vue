@@ -1,6 +1,6 @@
 <template>
   <div class="border-t-8 border-b-8 border-black">
-    <div class="container mx-auto bg-white relative  py-20">
+    <div class="container mx-auto bg-white relative  py-20" id="testimonials">
       <h2 class="text-4xl text-center font-bold tracking-tighter">What others say about me…</h2>
       <p class="px-20">Once you attain the passion for creating web sites, people are going to start noticing you and
         you'll be in high demand. It's the combination of these three vital factors forming the ultimate "bliss zone" …

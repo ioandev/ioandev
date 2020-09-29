@@ -32,14 +32,14 @@
           <div class="ml-3 relative">
             <div class="hidden sm:block sm:ml-6">
               <div class="flex">
-                <a href="#"
+                <a href="#story"
                   class="ml-4 px-3 py-2 font-medium text-lg leading-5 text-gray-300 hover:text-white hover:bg-blue-900 focus:outline-none focus:text-white focus:bg-gray-700 transition duration-150 ease-in-out">My
                   story</a>
-                <a href="#"
-                  class="ml-4 px-3 py-2 font-medium text-lg leading-5 text-gray-300 hover:text-white hover:bg-blue-900 focus:outline-none focus:text-white focus:bg-gray-700 transition duration-150 ease-in-out">Reviews</a>
-                <a href="#"
+                <a href="#testimonials"
+                  class="ml-4 px-3 py-2 font-medium text-lg leading-5 text-gray-300 hover:text-white hover:bg-blue-900 focus:outline-none focus:text-white focus:bg-gray-700 transition duration-150 ease-in-out">Testimonials</a>
+                <nuxt-link to="/apply" target="_blank"
                   class="ml-4 px-3 py-2 font-medium text-lg leading-5 text-gray-300 hover:text-white hover:bg-blue-900 focus:outline-none focus:text-white focus:bg-gray-700 transition duration-150 ease-in-out">I
-                  want in</a>
+                  want in</nuxt-link>
               </div>
             </div>
             <!--

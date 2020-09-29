@@ -13,7 +13,21 @@
         <div class="video-slot p-2 pt-6 xl:py-0 xl:px-2">
           <div class="border-blue-800 border-2 mx-auto" style="max-width:800px;">
             <div class="border-black border-4">
-              <img src="http://i3.ytimg.com/vi/FOGoUpB15TA/maxresdefault.jpg" class="w-full h-full object-none" style=""/>
+              <div v-if="!clicked_play" class="relative cursor-pointer">
+                <img src="http://i3.ytimg.com/vi/a4-bt9HqonM/maxresdefault.jpg" class="w-full h-full object-none" style=""/>
+                <div id="play" @click="clicked">&nbsp;</div>
+              </div>
+
+              <div v-if="clicked_play" class="youtube-embed-parent" style="--aspect-ratio: 16/9;">
+                <iframe
+                  src="https://www.youtube.com/embed/gj5L5Ju0x6k?autoplay=1&amp;start=1&amp;#038;feature=oembed"
+                  frameborder="0"
+                  class="youtube-embed"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                  >
+                  </iframe>
+                </div>
             </div>
           </div>
         </div>
@@ -55,10 +69,78 @@ export default {
   components: {
     ctaA,
     whatYouLearn
+  },
+  data: () => ({
+    clicked_play: false
+  }),
+  methods: {
+    clicked() {
+      this.clicked_play = true
+    }
   }
 }
 </script>
 
-<style>
+<style lang="scss">
+
+
+[style*="--aspect-ratio"]> :first-child {
+  width: 100%;
+}
+
+@supports (--custom:property) {
+  [style*="--aspect-ratio"] {
+    position: relative;
+  }
+
+  [style*="--aspect-ratio"]::before {
+    content: "";
+    display: block;
+    padding-bottom: calc(100% / (var(--aspect-ratio)));
+  }
+
+  [style*="--aspect-ratio"]> :first-child {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+  }
+}
+
+.youtube-embed {
+  /*
+  width: 100%;
+  height: -webkit-fill-available;*/
+  width: 100%;
+  min-width: 650px;
+  min-width:420px;
+  height:-webkit-fill-available;;
+}
+
+.youtube-embed-parent {
+
+  min-height:320px;
+}
+@media (min-width: 340px) {
+  .youtube-embed-parent {
+    min-width:120px;
+  }
+}
+@media (min-width: 1024px) {
+  .youtube-embed-parent {
+    min-width:720px;
+  }
+}
+
+#play {
+  width:100%;
+  height:100%;
+  position:absolute;
+  top:0px;
+  left:0px;
+  z-index:999;
+  overflow:hidden;
+  background: url("~assets/img/play.png") center center no-repeat;
+}
 
 </style>
